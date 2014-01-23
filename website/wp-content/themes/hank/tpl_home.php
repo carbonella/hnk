@@ -31,11 +31,9 @@ Template Name: tpl_home
 			<img alt="home" src="<?php bloginfo('template_directory'); ?>/images/webdesign_05.jpg">
 		</div>		
 		<div id="home">
-			<h1>Le Touriste revient de Mexico !</h1>
-			<h2>Nouvelle recette  : Avocat, steak de seitan, piment,</h2>
-			<h3>à partir du 12 sept.</h3>
-			Ego vero sic intellego, Patres conscripti, nos hoc tempore in provinciis decernendis Nam quis hoc non sentit omnia alia esse nobis vacua ab omni pericususpicione bell
-			Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec ideris
+			<h1><?php _e('[:en]Welcome![:fr]Bienvenue chez Hank!'); ?></h1> 
+			<h2><?php _e('[:en]It is with a great pleasure that we will receive you Monday to Saturday, 11am to 21pm <br/>from 28 January 2014![:fr]C\'est avec un immense plaisir que nous recevrons du lundi au samedi de 11h à 21h <br/> à partir du 28 janvier 2014!'); ?></h2>
+			<h3><?php _e('[:en]Come and try our Hankburgers and give us your feedback![:fr]Venez tester nos Hankburgers et donnez-nous votre avis!'); ?></h3>
 		</div>
 
 		<div id="menu">
@@ -58,55 +56,80 @@ Template Name: tpl_home
 
 			<div id="menu_carte">
 				<h1><?php _e('[:en]A la carte [:fr]A la carte'); ?></h1>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<h1><?php _e('[:en]Coming soon, just waiting to be discovered on site![:fr]A venir, en attendant venez la découvrir sur place!'); ?></h1>
+				
+				<!--
 				<div class="our-burger">
 					<h2><?php _e('[:en]Our Burgers [:fr]Nos Burgers'); ?></h2>
 					<p class="menu_pdt">
-						<span class="menu_title">la Catcheuse</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span><br>
-						<span class="menu_title">le Bucheron</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span><br>
-						<span class="menu_title">l'’Aristocrate</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span><br>
-						<span class="menu_title">Tata Monique</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span><br>
+						<span class="menu_title">la Catcheuse</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span><br>
+						<span class="menu_title">le Bucheron</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span><br>
+						<span class="menu_title">l'’Aristocrate</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span><br>
+						<span class="menu_title">Tata Monique</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span><br>
 						<br>
-						<span class="menu_title">Ou la Salade</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span>
+						<span class="menu_title">Ou la Salade</span>&nbsp;&nbsp;&nbsp;(steack seitan, cheese vegan, tomate, oignons, cornichons)&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span>
 					</p>
 				</div>
 				<div class="sides">
 					<h2><?php _e('[:en]Sides [:fr]Les Accompagnements'); ?></h2>
 					<p class="menu_pdt">
-						<span class="menu_title">Frites qui ne tachent pas</span>&nbsp;&nbsp;&nbsp;(pommes de terres bio, cuites au four)&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span><br>
-						<span class="menu_title">Salade  colesaw</span>&nbsp;&nbsp;&nbsp;(choux, carottes sauce basalmique)&nbsp;&nbsp;&nbsp;<span class="menu_title">4,80</span>
+						<span class="menu_title">Frites qui ne tachent pas</span>&nbsp;&nbsp;&nbsp;(pommes de terres bio, cuites au four)&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span><br>
+						<span class="menu_title">Salade  colesaw</span>&nbsp;&nbsp;&nbsp;(choux, carottes sauce basalmique)&nbsp;&nbsp;&nbsp;<span class="menu_title">40,80</span>
 					</p>
 				</div>
 				<div class="drinks">
 					<h2><?php _e('[:en]Drinks [:fr]Les Boissons'); ?></h2>
 					<p class="menu_pdt">
-						<span class="menu_title">thé&nbsp;3,30,&nbsp;café&nbsp;1,90, jus de fruits&nbsp;</span>(25cl)<span class="menu_title">&nbsp;3,10,&nbsp;eau&nbsp;</span>(33cl)<span class="menu_title">&nbsp;3,20<br>
-							&nbsp;vin bio&nbsp;</span>(20cl)<span class="menu_title">&nbsp;3,90,&nbsp;bio cola</span>&nbsp;(33cl)<span class="menu_title">&nbsp;2,90,&nbsp;bière bio&nbsp;</span>(33cl)<span class="menu_title">&nbsp;3,90</span>
+						<span class="menu_title">thé&nbsp;30,30,&nbsp;café&nbsp;10,90, jus de fruits&nbsp;</span>(25cl)<span class="menu_title">&nbsp;30,10,&nbsp;eau&nbsp;</span>(33cl)<span class="menu_title">&nbsp;30,20<br>
+							&nbsp;vin bio&nbsp;</span>(20cl)<span class="menu_title">&nbsp;30,90,&nbsp;bio cola</span>&nbsp;(33cl)<span class="menu_title">&nbsp;20,90,&nbsp;bière bio&nbsp;</span>(33cl)<span class="menu_title">&nbsp;30,90</span>
 						</p>
 					</div>
 					<div class="dessert">
 						<h2><?php _e('[:en]Les Desserts [:fr]Les Desserts'); ?></h2>
-						<p class="menu_pdt"><span class="menu_title">tarte aux pommes&nbsp;&nbsp;4,80&nbsp;&nbsp;&nbsp;brownie&nbsp;&nbsp;3,80&nbsp;&nbsp;&nbsp;cheese-cake&nbsp;&nbsp;4,80</span></p>
+						<p class="menu_pdt"><span class="menu_title">tarte aux pommes&nbsp;&nbsp;4,80&nbsp;&nbsp;&nbsp;brownie&nbsp;&nbsp;3,80&nbsp;&nbsp;&nbsp;cheese-cake&nbsp;&nbsp;40,80</span></p>
 					</div>
 					<div class="menu-complete">
 						<h2><?php _e('[:en]Menus [:fr]Les Formules'); ?></h2>
 						<p class="menu_pdt">
-							<span class="menu_title">Menu rapide</span>&nbsp;&nbsp;&nbsp;(burger + accompagnement + boisson)&nbsp;&nbsp;<span class="menu_title">9.90</span><br>
-							<span class="menu_title">Menu gourmant</span>&nbsp;&nbsp;&nbsp;(burger + accompagnement + boisson + dessert)&nbsp;&nbsp;<span class="menu_title">14,90</span>
+							<span class="menu_title">Menu rapide</span>&nbsp;&nbsp;&nbsp;(burger + accompagnement + boisson)&nbsp;&nbsp;<span class="menu_title">90.90</span><br>
+							<span class="menu_title">Menu gourmant</span>&nbsp;&nbsp;&nbsp;(burger + accompagnement + boisson + dessert)&nbsp;&nbsp;<span class="menu_title">140,90</span>
 						</p>
 					</div>
 					<p class="menu_notice">Prix € TTC</p>
+					-->
 				</div>
+
 			</div>
 		</div>
 
 		<div id="who">
 			<h1><?php _e('[:en]Who\'s Hank [:fr]Qui est Hank ?'); ?></h1>
 			<div id="who-1">
-				llud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solia tarum rerum cibos iam consumendo inediae propine quantis aerumnas exitialis horrebant.		
+				Hank est un restaurant dans le Marais à Paris proposant de savoureux hamburgers bio sans aucune matière animale.<br/>
+				Un hankburger c'est :
+				<br/>
+				★ du bio : des produits et des producteurs soigneusement sélectionnés 100% bio,<br/>
+				★ du sain : caloriquement 50% plus léger qu’un hamburger classique et sans cholestérol et pourtant très copieux,<br/>
+				★ du frais : nos steaks et sauces sont faits maison et nos burgers confectionnés minute sous vos yeux,<br/>
+				★ et écologique : manger un repas chez Hank, c'est diviser son empreinte écologique par 10* lors d’un seul repas !<br/>
+				Tout cela fait par nos soins et sur place ou par des artisans des environs avec la volonté de proposer les meilleurs aliments, sélectionnés avec soin.<br/>
 			</div>
 			<div id="who-2">
-				llud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solia tarum rerum cibos iam consumendo inediae propine quantis aerumnas exitialis horrebant.
-				<br><br>
+				Eco-responsabilité 
+				<br/>
+				Chez Hank, tous les produits que nos utilisons (alimentaire et autre) sont écologique, non testé sur les animaux et sans matière d'origine animal.<br/>
+				Notre mobilier a été conçu par un artisan Français et composé de 100% de matériaux de récupération (bois palette).<br/>
+				Nos emballages sont issues de matériaux recyclé et 100% biodégradable.<br/>
+				Nos déchets sont triés et nous sommes prêt pour la mise en place du compost parisien.<br/>
+				Tous les logiciels que nous utilisons (site Internet, caisses, domotique...) sont des logiciels libre de meme que la musique diffusée au restaurant.	
+				<br/>
+				<br/>
+				<br/>
 			</div>
 		</div>
 
@@ -134,7 +157,7 @@ Template Name: tpl_home
 			</div>
 		</div>
 
-		
+
 
 		<div id="contact">
 			<h1>Contact</h1>
@@ -156,7 +179,7 @@ Template Name: tpl_home
 			</ul>								
 		</div>
 	</div>
-	
+
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/scrolld.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
@@ -176,7 +199,7 @@ Template Name: tpl_home
 	});
 	</script>
 	<script type="text/javascript"> $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();}); </script>
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
 </body>
 </html>
 
