@@ -19,10 +19,10 @@
 define('DB_NAME', 'hank_website');
 
 /** MySQL database username */
-define('DB_USER', 'hank_website');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Par24thGw');
+define('DB_PASSWORD', 'prova');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
